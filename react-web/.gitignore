@@ -4,3 +4,6 @@ dist/
 .vercel/
 .firebase/
 firebase-debug.log
+
+.vercel
+.env*
