@@ -45,3 +45,25 @@ src/
 
 Routes: `/` (Login or Home), `/signup`, `/tasks`, `/add-task`, `/completed`,
 `/notes`, `/users` (admins only), `/profile`.
+
+## Deploy
+
+**Vercel** (config in `vercel.json`):
+
+```bash
+npx vercel login
+npx vercel --prod
+```
+
+When asked for the root directory, use `react-web`.
+
+**Firebase Hosting** (config in `firebase.json`, project `dolistic`):
+
+```bash
+npm install -g firebase-tools
+firebase login
+npm run build
+firebase deploy --only hosting
+```
+
+The site goes live at https://dolistic.web.app.
